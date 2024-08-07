@@ -1,0 +1,47 @@
+body{
+    background-color: #161b33;
+}
+
+
+
+.header{
+    color: #f1dac4;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    font-style: normal;
+}
+
+.navbar-brand{
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 30px;
+    font-style: normal;
+    color: #f1dac4;
+}
+
+.w-90{
+    width: 90vw;
+}
+
+.bg-lblue{
+    background-color: #474973;
+}
+
+.lead{
+    color: #a69cac;
+    font-size: 2rem;
+}
+
+.intro{
+   margin-top: 100px; 
+
+}
+
+.nav-link{
+    color: #f1dac4;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+}
