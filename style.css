@@ -1,9 +1,9 @@
 body{
     background-color: #161b33;
 }
-.afs{
+.light-color{
 
-    color: #1f253f;
+    color: #a69cac;
 }
 
 .sec-header{
@@ -61,7 +61,7 @@ body{
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
-    color: #f1dac4;
+    color: #f3caa3;
 }
 
 .section-heading{
@@ -74,6 +74,11 @@ body{
     font-size: 1.2rem;
     font-weight: 500;
 }
+
+.btn-purple:hover{
+    background-color: #8880fd;
+}
+
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
 
