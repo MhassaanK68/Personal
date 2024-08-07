@@ -1,8 +1,18 @@
 body{
     background-color: #161b33;
 }
+.afs{
 
+    color: #1f253f;
+}
 
+.sec-header{
+    font-size: 2.5rem;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
 
 .header{
     color: #f1dac4;
@@ -17,7 +27,7 @@ body{
     font-weight: 500;
     font-size: 30px;
     font-style: normal;
-    color: #f1dac4;
+    color: #f3caa3;
 }
 
 .w-90{
@@ -28,7 +38,7 @@ body{
     background-color: #474973;
 }
 
-.lead{
+.lead-style{
     color: #a69cac;
     font-size: 2rem;
 }
@@ -38,10 +48,82 @@ body{
 
 }
 
+.light{
+    color: #a69cac;
+}
+
 .nav-link{
-    color: #f1dac4;
+    color: #f3caa3;
     font-family: "Poppins";
     font-weight: 400;
     font-size: 20px;
     font-style: normal;
 }
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: #f1dac4;
+}
+
+.section-heading{
+    color: #D7E5F1;
+}
+
+.btn-purple{
+    background-color: #A19AFE;
+    font-family: Poppins;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .header{
+        font-size: 2.2rem;
+    }
+
+    .lead-style{
+        font-size: 1.5rem;
+    }
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .header{
+        font-size: 2.5rem;
+    }
+
+    .lead-style{
+        font-size: 1.65rem;
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+    .header{
+        color: #f1dac4;
+        font-family: "Lilita One", sans-serif;
+        font-weight: 400;
+        font-size: 3rem;
+        font-style: normal;
+    }
+
+    .lead-style{
+        color: #a69cac;
+        font-size: 2rem;
+    }
+
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+}
+
+
+
