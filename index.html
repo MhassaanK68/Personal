@@ -14,90 +14,86 @@
               accent: '#9f8df1',
               base: '#0e0d2b',
               card: '#1a183a',
-              nav: '#2f2b59',
+              nav: '#1a1a2e',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
             },
             animation: {
-              fadeIn: 'fadeIn 1.5s ease-in forwards',
-              slideUp: 'slideUp 1s ease-out',
+              fadeIn: 'fadeIn 1.5s ease-out forwards',
+              slideUp: 'slideUp 1.2s ease-out forwards',
             },
             keyframes: {
               fadeIn: {
-                '0%': { opacity: 0 },
-                '100%': { opacity: 1 },
+                from: { opacity: 0 },
+                to: { opacity: 1 },
               },
               slideUp: {
-                '0%': { transform: 'translateY(20px)', opacity: 0 },
-                '100%': { transform: 'translateY(0)', opacity: 1 },
+                from: { transform: 'translateY(20px)', opacity: 0 },
+                to: { transform: 'translateY(0)', opacity: 1 },
               },
             },
           },
         },
       };
     </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   </head>
   <body class="bg-base text-[#d6c0e8] font-sans">
     <!-- Header -->
-    <header class="bg-nav shadow-md sticky top-0 z-50 animate-slideUp">
-      <div class="container mx-auto flex justify-between items-center p-4 px-8">
-        <div class="text-primary text-2xl font-bold tracking-wide">Hassan</div>
-        <nav>
-          <ul class="flex space-x-6 text-primary font-medium">
-            <li><a href="#home" class="hover:text-accent transition duration-300">Home</a></li>
-            <li><a href="#skills" class="hover:text-accent transition duration-300">Skills</a></li>
-            <li><a href="#projects" class="hover:text-accent transition duration-300">Projects</a></li>
-            <li><a href="#contact" class="hover:text-accent transition duration-300">Contact</a></li>
-          </ul>
+    <header class="bg-nav sticky top-0 z-50 shadow-sm">
+      <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+        <div class="text-primary text-2xl font-semibold tracking-tight">Hassan</div>
+        <nav class="space-x-6 text-sm font-medium">
+          <a href="#home" class="text-[#aaa] hover:text-primary transition">Home</a>
+          <a href="#skills" class="text-[#aaa] hover:text-primary transition">Skills</a>
+          <a href="#projects" class="text-[#aaa] hover:text-primary transition">Projects</a>
+          <a href="#contact" class="text-[#aaa] hover:text-primary transition">Contact</a>
         </nav>
       </div>
     </header>
 
     <!-- Hero -->
-    <section id="home" class="flex flex-col lg:flex-row items-center justify-between p-8 lg:p-20 gap-12 bg-gradient-to-b from-base to-[#191740] animate-fadeIn">
-      <div class="max-w-xl">
-        <h1 class="text-5xl font-extrabold text-primary mb-4">Hassan Mehmood</h1>
-        <h2 class="text-2xl font-semibold mb-4">Software Developer</h2>
-        <p class="mb-6 leading-relaxed text-lg">
-          I’m a Data Science student at FAST NUCES with 3 years of coding experience. I love building real-world solutions using C#, Python, JavaScript, and more.
-        </p>
-        <a href="mailto:mhassaanmehmood06@gmail.com" class="bg-accent text-black font-bold px-6 py-3 rounded-full shadow-lg hover:scale-105 hover:bg-primary hover:text-base transition-transform duration-300">
-          📞 Book A Call
-        </a>
-      </div>
-      <div>
-        <img src="programmer.png" alt="Developer Illustration" class="w-[400px] hidden lg:block rounded-xl drop-shadow-2xl transform hover:scale-105 transition-transform duration-300" />
-      </div>
+    <section id="home" class="flex flex-col items-center justify-center text-center min-h-screen px-6 animate-fadeIn">
+      <h1 class="text-5xl md:text-6xl font-bold text-primary mb-4 leading-tight">Hassan Mehmood</h1>
+      <h2 class="text-2xl font-medium mb-6">Minimalist Developer Portfolio</h2>
+      <p class="max-w-xl text-lg text-gray-300 leading-relaxed">
+        Data Science student at FAST NUCES with 3+ years of experience in modern web and backend development. Passionate about building simple, functional, elegant solutions.
+      </p>
+      <a href="mailto:mhassaanmehmood06@gmail.com" class="mt-6 inline-block bg-accent text-black font-medium px-6 py-2 rounded-full hover:bg-primary hover:text-base transition">
+        📞 Book A Call
+      </a>
     </section>
 
     <!-- Skills -->
-    <section id="skills" class="p-8 text-center animate-fadeIn">
-      <h2 class="text-4xl font-bold mb-6 text-primary">My Tech Stack</h2>
-      <ul class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-lg max-w-6xl mx-auto">
-        <li class="bg-nav px-4 py-2 rounded-full shadow hover:bg-accent hover:text-black transform hover:scale-105 transition-all duration-300">HTML</li>
-        <li class="bg-nav px-4 py-2 rounded-full shadow hover:bg-accent hover:text-black transform hover:scale-105 transition-all duration-300">CSS</li>
-        <li class="bg-nav px-4 py-2 rounded-full shadow hover:bg-accent hover:text-black transform hover:scale-105 transition-all duration-300">JavaScript</li>
-        <li class="bg-nav px-4 py-2 rounded-full shadow hover:bg-accent hover:text-black transform hover:scale-105 transition-all duration-300">C#</li>
-        <li class="bg-nav px-4 py-2 rounded-full shadow hover:bg-accent hover:text-black transform hover:scale-105 transition-all duration-300">ExpressJs</li>
-        <li class="bg-nav px-4 py-2 rounded-full shadow hover:bg-accent hover:text-black transform hover:scale-105 transition-all duration-300">ReactJs</li>
-        <li class="bg-nav px-4 py-2 rounded-full shadow hover:bg-accent hover:text-black transform hover:scale-105 transition-all duration-300">ASP.NET Core</li>
-        <li class="bg-nav px-4 py-2 rounded-full shadow hover:bg-accent hover:text-black transform hover:scale-105 transition-all duration-300">SQL</li>
-        <li class="bg-nav px-4 py-2 rounded-full shadow hover:bg-accent hover:text-black transform hover:scale-105 transition-all duration-300">Python</li>
-        <li class="bg-nav px-4 py-2 rounded-full shadow hover:bg-accent hover:text-black transform hover:scale-105 transition-all duration-300">C++</li>
-      </ul>
+    <section id="skills" class="py-20 px-6 text-center">
+      <h2 class="text-3xl font-semibold mb-10 text-primary">Tech Stack</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
+        <div class="bg-nav rounded-md py-2 text-sm hover:bg-accent hover:text-black transition">HTML</div>
+        <div class="bg-nav rounded-md py-2 text-sm hover:bg-accent hover:text-black transition">CSS</div>
+        <div class="bg-nav rounded-md py-2 text-sm hover:bg-accent hover:text-black transition">JavaScript</div>
+        <div class="bg-nav rounded-md py-2 text-sm hover:bg-accent hover:text-black transition">C#</div>
+        <div class="bg-nav rounded-md py-2 text-sm hover:bg-accent hover:text-black transition">ASP.NET Core</div>
+        <div class="bg-nav rounded-md py-2 text-sm hover:bg-accent hover:text-black transition">SQL</div>
+        <div class="bg-nav rounded-md py-2 text-sm hover:bg-accent hover:text-black transition">Python</div>
+        <div class="bg-nav rounded-md py-2 text-sm hover:bg-accent hover:text-black transition">Qt Creator</div>
+        <div class="bg-nav rounded-md py-2 text-sm hover:bg-accent hover:text-black transition">C++</div>
+      </div>
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="p-8 bg-[#191740] animate-fadeIn">
-      <h2 class="text-4xl font-bold mb-10 text-primary text-center">Projects</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-        <div class="bg-card p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-[1.02] transition-all duration-300">
-          <h3 class="text-2xl font-semibold mb-2 text-primary">Symphony Music Player</h3>
-          <p class="text-lg">
+    <section id="projects" class="py-20 px-6 bg-[#191740]">
+      <h2 class="text-3xl font-semibold mb-10 text-primary text-center">Projects</h2>
+      <div class="grid gap-8 max-w-5xl mx-auto md:grid-cols-2">
+        <div class="bg-card p-6 rounded-lg shadow-sm hover:shadow-md transition">
+          <h3 class="text-xl font-semibold mb-2 text-primary">Symphony Music Player</h3>
+          <p class="text-sm text-gray-300">
             A Qt and C++ desktop application. Designed to provide an immersive music experience. Robust functionality with a user-friendly interface..
           </p>
         </div>
-        <div class="bg-card p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-[1.02] transition-all duration-300">
-          <h3 class="text-2xl font-semibold mb-2 text-primary">Sight NGO Website</h3>
-          <p class="text-lg">
+        <div class="bg-card p-6 rounded-lg shadow-sm hover:shadow-md transition">
+          <h3 class="text-xl font-semibold mb-2 text-primary">Sight NGO Website</h3>
+          <p class="text-sm text-gray-300">
             Designed and developed a functional, user-friendly website to support Sight NGO’s mission.
           </p>
         </div>
@@ -105,9 +101,9 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="p-8 text-center animate-fadeIn">
-      <h2 class="text-4xl font-bold mb-4 text-primary">Contact Me</h2>
-      <p class="text-lg">Email: <a href="mailto:mhassaanmehmood06@gmail.com" class="underline hover:text-accent">mhassaanmehmood06@gmail.com</a></p>
+    <section id="contact" class="py-20 px-6 text-center">
+      <h2 class="text-3xl font-semibold mb-4 text-primary">Contact</h2>
+      <p class="text-lg mb-2">Email: <a href="mailto:mhassaanmehmood06@gmail.com" class="underline hover:text-accent">mhassaanmehmood06@gmail.com</a></p>
       <p class="text-lg">Phone: +92-330-7039460</p>
     </section>
 
